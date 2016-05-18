@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: web
+# Cookbook Name:: custom_web
 # Spec:: default
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
@@ -16,8 +16,8 @@ describe 'hello_world_test::default' do
       expect { chef_run }.to_not raise_error
     end
 
-    it 'create the default web site' do
-      expect(chef_run).to create_web_site 'default'
+    it 'creates the default web site' do
+      expect(chef_run).to create_custom_web_site 'default'
     end
   end
 end

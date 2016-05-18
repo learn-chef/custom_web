@@ -1,4 +1,4 @@
-include WebCookbook::Helpers
+include CustomWebCookbook::Helpers
 
 property :homepage, String, default: '<h1>Hello world!</h1>'
 

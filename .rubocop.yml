@@ -2,3 +2,5 @@ Documentation:
   Enabled: false
 Style/MultilineOperationIndentation:
   Enabled: false
+Metrics/LineLength:
+  Max: 120

@@ -1,4 +1,4 @@
-module WebCookbook
+module CustomWebCookbook
   module Helpers
     def package_name
       case node['platform']
@@ -16,4 +16,4 @@ module WebCookbook
   end
 end
 
-Chef::Recipe.send(:include, WebCookbook::Helpers)
+Chef::Recipe.send(:include, CustomWebCookbook::Helpers)

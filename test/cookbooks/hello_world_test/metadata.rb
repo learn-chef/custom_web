@@ -1,4 +1,4 @@
 name 'hello_world_test'
 version '0.1.0'
 
-depends 'web'
+depends 'custom_web'
