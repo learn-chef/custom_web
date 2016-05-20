@@ -15,5 +15,3 @@ module CustomWebCookbook
     end
   end
 end
-
-Chef::Recipe.send(:include, CustomWebCookbook::Helpers)
