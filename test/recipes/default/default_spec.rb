@@ -1,8 +1,8 @@
 package_name =
   service_name =
     case os[:family]
-    when 'centos' then 'httpd'
-    when 'ubuntu' then 'apache2'
+    when 'redhat' then 'httpd'
+    when 'debian' then 'apache2'
     end
 
 describe package package_name do
