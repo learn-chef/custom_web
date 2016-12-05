@@ -17,4 +17,7 @@ suites:
     run_list:
       - recipe[hello_world_test::default]
       - recipe[hello_world_test::deps]
+    verifier:
+      inspec_tests:
+        - test/recipes
     attributes:
