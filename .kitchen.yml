@@ -4,6 +4,10 @@ driver:
 
 provisioner:
   name: chef_zero
+  # You may wish to disable always updating cookbooks in CI or other testing environments.
+  # For example:
+  #   always_update_cookbooks: <%= !ENV['CI'] %>
+  always_update_cookbooks: false
 
 verifier:
   name: inspec
@@ -19,5 +23,5 @@ suites:
       - recipe[hello_world_test::deps]
     verifier:
       inspec_tests:
-        - test/recipes
+        - test/smoke/default
     attributes:
