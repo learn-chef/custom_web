@@ -24,8 +24,8 @@ end
 
 describe 'hello_world_test::default' do
   platforms = {
-    'centos' => '7.2.1511',
-    'ubuntu' => '14.04'
+    'centos' => '7.3.1611',
+    'ubuntu' => '14.04',
   }
 
   platforms.each do |platform, version|

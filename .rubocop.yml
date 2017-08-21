@@ -1,6 +1,6 @@
 Documentation:
   Enabled: false
-Style/MultilineOperationIndentation:
+Layout/MultilineOperationIndentation:
   Enabled: false
 Metrics/LineLength:
   Max: 120
