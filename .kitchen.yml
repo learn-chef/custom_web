@@ -23,5 +23,5 @@ suites:
       - recipe[hello_world_test::deps]
     verifier:
       inspec_tests:
-        - test/smoke/default
+        - test/integration/default
     attributes:
