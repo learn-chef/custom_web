@@ -18,7 +18,7 @@ action :create do
   end
 
   file '/var/www/html/index.html' do
-    content homepage
+    content current_resource.homepage
   end
 end
 
