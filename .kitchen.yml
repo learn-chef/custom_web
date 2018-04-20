@@ -13,8 +13,8 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-14.04
-  - name: centos-7.3
+  - name: ubuntu-16.04
+  - name: centos-7.4
 
 suites:
   - name: default
@@ -24,4 +24,13 @@ suites:
     verifier:
       inspec_tests:
         - test/integration/default
+    attributes:
+  - name: uninstall
+    run_list:
+      - recipe[hello_world_test::default]
+      - recipe[hello_world_test::deps]
+      - recipe[hello_world_test::uninstall]
+    verifier:
+      inspec_tests:
+        - test/integration/uninstall
     attributes:

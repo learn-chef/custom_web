@@ -23,7 +23,11 @@ action :create do
 end
 
 action :delete do
-  package 'httpd' do
-    action :delete
+  service package_name do
+    action [:stop, :disable]
+  end
+
+  package package_name do
+    action :remove
   end
 end
