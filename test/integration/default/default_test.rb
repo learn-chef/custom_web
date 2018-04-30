@@ -10,7 +10,7 @@ describe package(package_name) do
 end
 
 describe service(service_name) do
-  it { should be_enabled }
+  # it { should be_enabled } https://github.com/chef/chef/issues/7119
   it { should be_running }
 end
 
